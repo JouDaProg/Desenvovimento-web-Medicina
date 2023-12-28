@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/lab2-fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Formulário de Cadastro de Paciente</title>
+    
+</head>
+<body>
+    <header>
+        <img src="imagens/lab2.png" alt="Logo LabView sem fundo">
+        <h1>Cadastro</h1>
+    </header>
+    <nav>
+        <a href="index.html">Quem Somos</a>
+        <a href="servicos.html">Nossos Serviços</a>
+        <a href="orcamento.html">Agende um Orçamento</a>
+        <a href="localizacao.html">Localização</a>
+    </nav> 
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+
+            <div>
+                
+                    <h1>Cadastro de Pacientes</h1>
+                    <p>
+                        Faça seu cadastro e logo entraremos em contato!
+                    </p>
+                
+                    <form id="cadastro" action="." method="post" autocomplete="on">
+                        <div class="campo">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="text" name="nome" id="inome" placeholder="Seu nome aqui" autocomplete="cc-name" required maxlength="50">
+                            <label for="ilogin"></label>
+                        </div>
+    
+    
+                        <div class="campo">
+                            <span class="material-symbols-outlined">phone</span>
+                            <input type="tel" name="senha" id="phone" placeholder="xx-xxxxx-xxxx" autocomplete="mobile" required  maxlength="12">
+                            <label for="isenha"></label>
+                        </div>
+    
+                        <div class="campo">
+                            <span class="material-symbols-outlined">mail</span>
+                            <input type="email" name="email" id="iemail" placeholder="email" autocomplete="email" required maxlength="50">
+                            <label for="ilogin"></label>
+                        </div>
+                        <input type="submit" value="Cadastrar" class="cadastrar">
+                    </form>
+    
+            </div>
+
+        </section>
+    </main>        
+
+    <p id="successMessage" style="display: none;">Cadastro feito com sucesso!</p>
+    <script src="js/cadastro.js"></script>
+
+    <footer>
+        
+       </footer>
+   </body>
+   </html>
